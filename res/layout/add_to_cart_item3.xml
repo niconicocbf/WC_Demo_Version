@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dishes_dot3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/milestone_small_grey5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dishes_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/text_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#ffaaaaaa" />
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/content_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.85dp"
+            android:text="Other" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1" />
+
+        <View
+            android:id="@+id/text_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="5dp"
+            android:background="#ffaaaaaa" />
+
+        <View
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user_more_right" />
+    </RelativeLayout>
+
+</LinearLayout>

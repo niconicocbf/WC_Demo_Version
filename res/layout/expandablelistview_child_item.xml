@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="11.85dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/content_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Pizza" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/content_min1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:text="- brokly"
+            android:textColor="#ff959595" />
+
+        <TextView
+            android:id="@+id/text3"
+            style="@style/content_min1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:text="- extra cheese"
+            android:textColor="#ff959595" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_count"
+        style="@style/content_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:text="1" />
+
+    <RelativeLayout
+        android:id="@+id/pad"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/dishes_subtract"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dishes_subtract"
+            android:textColor="#ffd5d5d5"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/content_middle"
+            style="@style/content_middle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dishes_number"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ff959595" />
+
+        <TextView
+            android:id="@+id/dishes_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dishes_add"
+            android:textColor="#ffd5d5d5"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        style="@style/content_min1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="$12.00"
+        android:textColor="#fff68e56" />
+
+</RelativeLayout>

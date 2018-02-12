@@ -1,0 +1,62 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">#ffF7AC2E</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">16.6dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="content_middle">
+        <item name="android:textSize">14.3dp</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+
+    <style name="content_min">
+        <item name="android:textSize">14.3dp</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+
+    <style name="content_min1">
+        <item name="android:textSize">12.3dp</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+
+    <style name="content_min2">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/textcolor1</item>
+    </style>
+
+    <style name="HalfTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/half_tra</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

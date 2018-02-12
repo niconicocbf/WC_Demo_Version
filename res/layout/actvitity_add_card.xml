@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff5f5f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/add_cart_item_bg" >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/card_icon" />
+
+        <LinearLayout
+            android:id="@+id/sksmmchat_search_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" />
+
+        <EditText
+            android:id="@+id/card_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="1234 1234 1234 1234"
+            android:maxLength="19"
+            android:numeric="integer"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="14.3dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/add_cart_item_bg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/card_data"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:hint="MM/DD"
+                android:maxLength="5"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14.3dp" />
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/add_card_delete"
+                android:textColorHint="@color/hintcolor"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="CCV"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="14.3dp" />
+
+        <LinearLayout
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:background="@drawable/canada" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="ZIP"
+                android:maxLength="6"
+                android:numeric="integer"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14.3dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffaaaaaa" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ffaaaaaa" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/add_card_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Scan You Card"
+                android:textColor="#ff959595"
+                android:textSize="14.3dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/title_bg" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="@drawable/backgroud" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/exit" -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:background="@drawable/maket_title_left" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginTop="18dp" -->
+    <!-- android:text="Add a Card" -->
+    <!-- android:textColor="@color/white" -->
+    <!-- android:textSize="25dp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_marginRight="20dp" -->
+    <!-- android:layout_marginTop="18dp" -->
+    <!-- android:text="Save" -->
+    <!-- android:textColor="@color/white" -->
+    <!-- android:textSize="22dp" /> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#d8fe8900" >
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Add a Card"
+                    android:typeface="normal" />
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Save" />
+
+                <TextView
+                    android:id="@+id/exit"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/maket_title_left" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@drawable/shadow" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

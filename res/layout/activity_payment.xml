@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="96dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="78dp" />
+
+            <View
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <LinearLayout
+                android:id="@+id/payment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/payment_loading_bg"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/payment_text_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/payment_text_bg2"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            android:id="@+id/payment_loading"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:background="@drawable/loading_ring"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/my_payment"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="$123.50"
+                            android:textColor="#fff8992e"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/payment_check"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/payment_check"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/payment_text"
+                    style="@style/content_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Your Total"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- android:visibility="gone" -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/content_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share your matel"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="21.3dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/confirmation_share" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffaaaaaa" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Member Points"
+                        android:textColor="@color/textcolor"
+                        android:textSize="16.6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="+25"
+                        android:textColor="#fffe8900"
+                        android:textSize="16.6dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="200"
+                        android:textSize="12dp" />
+
+                    <!-- <LinearLayout -->
+                    <!-- android:id="@+id/dishes_dot" -->
+                    <!-- android:layout_width="20dp" -->
+                    <!-- android:layout_height="20dp" -->
+                    <!-- android:layout_marginTop="18dp" -->
+                    <!-- android:background="@drawable/dishes_menu_item_sel" -->
+                    <!-- android:gravity="center" > -->
+
+
+                    <!-- <View -->
+                    <!-- android:layout_width="8dp" -->
+                    <!-- android:layout_height="8dp" -->
+                    <!-- android:background="@drawable/dishes_menu_dot" /> -->
+                    <!-- </LinearLayout> -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="11dp"
+                            android:orientation="vertical" >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="#ffacacac" />
+
+                            <SeekBar
+                                android:id="@+id/seekbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:max="200"
+                                android:progress="5"
+                                android:progressDrawable="@drawable/progressbar_bg"
+                                android:thumb="@null" >
+                            </SeekBar>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="#ffacacac" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dishes_dot1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/milestone_small"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dishes_dot2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/milestone_small_grey5"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/progress_text"
+                                android:layout_width="35dp"
+                                android:layout_height="15dp"
+                                android:background="@drawable/confirmation_text_bg"
+                                android:gravity="center"
+                                android:text="175"
+                                android:textColor="@color/white"
+                                android:textSize="11.3sp" />
+
+                            <TextView
+                                android:id="@+id/dot03"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/maket_dot_sel" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffaaaaaa" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Pizzahut Points"
+                        android:textColor="@color/textcolor"
+                        android:textSize="16.6dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/star1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/maket_star0" />
+
+                        <TextView
+                            android:id="@+id/star2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/maket_star0" />
+
+                        <TextView
+                            android:id="@+id/star3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/maket_star0" />
+
+                        <TextView
+                            android:id="@+id/star4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/maket_star0" />
+
+                        <TextView
+                            android:id="@+id/star5"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/maket_star0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/change_card"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/draw_more_info" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ffacacac" />
+
+            <LinearLayout
+                android:id="@+id/payment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/card_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:gravity="center"
+                        android:text="Chaoli"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14.3dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="130dp"
+                        android:gravity="center"
+                        android:text="**** **** **** 1235"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14.3dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/maket_menu_up_down"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/payment_up" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/payment_process"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/maket_bottom_menu_bg"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/bottom"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Process Payment" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_pan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#b8000000"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/cc_nonselect" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/pointer" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/pp_disabled" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/pointer"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/cash_disabled" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/pointer"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/payment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:listSelector="@drawable/listview_default_stye" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/payment_select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/maket_bottom_menu_bg"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/title_bg" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="@drawable/backgroud" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/exit" -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:background="@drawable/maket_title_left" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginTop="18dp" -->
+    <!-- android:text="Payment" -->
+    <!-- android:textColor="@color/white" -->
+    <!-- android:textSize="25dp" /> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#d8fe8900" >
+
+                <TextView
+                    android:id="@+id/exit"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/maket_title_left" />
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Payment" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@drawable/shadow" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

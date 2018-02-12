@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dishes_dot3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/milestone_small_grey5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="11.85dp" >
+
+        <TextView
+            android:id="@+id/text4_1"
+            style="@style/content_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Instructions" />
+
+        <LinearLayout
+            android:id="@+id/sksmmchat_search_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" />
+
+        <EditText
+            android:id="@+id/edit_intr"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/text4_1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top" />
+    </RelativeLayout>
+
+</LinearLayout>

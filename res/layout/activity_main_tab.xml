@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- <item name="android:ellipsize">marquee</item> -->
+            <!-- <item name="android:gravity">center_horizontal</item> -->
+            <!-- <item name="android:background">#ffF7AC2E</item> -->
+            <!-- <item name="android:layout_width">fill_parent</item> -->
+            <!-- <item name="android:layout_height">wrap_content</item> -->
+            <!-- <item name="android:button">@null</item> -->
+            <!-- <item name="android:singleLine">true</item> -->
+            <!-- <item name="android:layout_weight">1.0</item> -->
+
+            <LinearLayout
+                android:id="@+id/radio_button_bg1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#ffF7AC2E"
+                android:gravity="center"
+                android:padding="7dp" >
+
+                <TextView
+                    android:id="@+id/radio_button0"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home_icon_selected"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/radio_button_bg2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#ffF7AC2E"
+                android:gravity="center"
+                android:padding="7dp" >
+
+                <TextView
+                    android:id="@+id/radio_button1"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/scan_icon"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/radio_button_bg3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#ffF7AC2E"
+                android:gravity="center"
+                android:padding="7dp" >
+
+                <TextView
+                    android:id="@+id/radio_button2"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/orders_icon"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/radio_button1" -->
+            <!-- style="@style/main_tab_bottom" -->
+            <!-- android:layout_marginLeft="1dp" -->
+            <!-- android:drawableTop="@drawable/tab_2" /> -->
+
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/radio_button2" -->
+            <!-- style="@style/main_tab_bottom" -->
+            <!-- android:layout_marginLeft="1dp" -->
+            <!-- android:drawableTop="@drawable/tab_3" /> -->
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

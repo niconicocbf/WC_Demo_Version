@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <View
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:background="#ffacacac" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/listview_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/comment_img" />
+
+        <TextView
+            style="@style/content_min2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:text="2 days ago" />
+
+        <TextView
+            style="@style/content_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/listview_img"
+            android:text="George name"
+            android:textColor="#ff959595" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/listview_img" >
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/maket_star1" />
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/maket_star1" />
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/maket_star1" />
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/maket_star0" />
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/maket_star0" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/content_min1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="41dp"
+            android:layout_toRightOf="@id/listview_img"
+            android:text="this is one of the best pizza place in town, you dont want to miss it." />
+    </RelativeLayout>
+
+</LinearLayout>

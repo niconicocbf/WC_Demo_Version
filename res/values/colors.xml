@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="listDivider">#ffcc99</color>
+    <color name="character">#000000</color>
+    <color name="button_text_normal">#ffffffff</color>
+    <color name="button_text_pressed">#ffffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="weibo_tag">#FF5D779E</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="textcolor">#ff636363</color>
+    <color name="textcolor1">#ff959595</color>
+    <color name="moneycolorbg">#ffecedef</color>
+    <color name="moneycolor">#fff9c588</color>
+    <color name="hintcolor">#ffaaaaaa</color>
+    <color name="half_tra">#90000000</color>
+    <color name="gray">#fff5f5f5</color>
+    <color name="title">#fffe8900</color>
+
+</resources>

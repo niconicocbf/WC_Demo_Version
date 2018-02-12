@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <HorizontalScrollView
+                android:id="@+id/maket_info_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/maket_all_desciption"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            style="@style/content_min1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Appitizer" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:background="#ff959595" />
+
+                    <RelativeLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            style="@style/content_min1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Entree" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:background="#ff959595" />
+
+                    <RelativeLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            style="@style/content_min1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Chinese" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:background="#ff959595" />
+
+                    <RelativeLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            style="@style/content_min1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Drinks" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#ff959595" />
+
+                    <RelativeLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            style="@style/content_min1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Drinks" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#ff959595" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/maket_info_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/maket_info_scrollView"
+                android:background="#ff959595" />
+
+            <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView
+                android:id="@+id/maket_main_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/maket_info_line"
+                android:layout_marginBottom="86dp"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maket_main_listview"
+                android:layout_gravity="center"
+                android:text="Empty!"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/blackgroud"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#88000000"
+                android:visibility="gone" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <ExpandableListView
+                    android:id="@+id/expandble"
+                    android:layout_width="match_parent"
+                    android:layout_height="326dp"
+                    android:background="@color/white"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:visibility="gone" >
+                </ExpandableListView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#ffacacac" />
+
+                <RelativeLayout
+                    android:id="@+id/sending_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/draw_more_info" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/pay_num"
+                            style="@style/content_min1"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/maket_number_bg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="item selecte"
+                            android:textColor="#fffbc383" />
+
+                        <TextView
+                            android:id="@+id/pay_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="$0.00"
+                            android:textColor="#fffbc383" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/maket_menu_up_down"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/maket_menu_up" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/send_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/maket_bottom_menu_bg"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Send Order"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/maket_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <TextView
+                    android:id="@+id/title_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/maket_title_bg" />
+
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/maket_title_right" />
+
+                <TextView
+                    android:id="@+id/exit"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/maket_title_left" />
+
+                <LinearLayout
+                    android:id="@+id/menu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- <TextView -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:text="Pizza hunt" -->
+                    <!-- android:textColor="@color/white" -->
+                    <!-- android:textSize="25dp" /> -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza hunt"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/title_menu_up_down"
+                        android:layout_width="14dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/title_menu_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/title_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/title_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

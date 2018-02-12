@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000" >
+
+    <RelativeLayout
+        android:id="@+id/dishes_pad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp" >
+
+        <RelativeLayout
+            android:id="@+id/dishes_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/add_to_cart_title" >
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/maket_title_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Item Option"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dishes_title" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/dishes_img" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#88000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Vegetarian supreme pizza" />
+
+                <TextView
+                    android:id="@+id/option_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="$30.00"
+                    android:textColor="#fffe8900" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/dishes_mut"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dishes_subtract"
+                        android:gravity="center"
+                        android:textColor="#ffd5d5d5"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/dishes_content"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dishes_number"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/textcolor1" />
+
+                    <TextView
+                        android:id="@+id/dishes_add"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dishes_add"
+                        android:gravity="center"
+                        android:textColor="#ffd5d5d5"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/item_option_bg" >
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null" >
+                </ListView>
+
+                <RelativeLayout
+                    android:layout_width="15dp"
+                    android:layout_height="192dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/dishesmenu_line" />
+
+                    <LinearLayout
+                        android:id="@+id/dishes_dot1"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/dishes_menu_item"
+                        android:gravity="center" >
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:background="@drawable/dishes_menu_dot" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dishes_dot2"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/dishes_menu_item"
+                        android:gravity="center" >
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:background="@drawable/dishes_menu_dot" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dishes_dot3"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="130dp"
+                        android:background="@drawable/dishes_menu_item"
+                        android:gravity="center" >
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:background="@drawable/dishes_menu_dot" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="180dp"
+                        android:background="@drawable/dishes_menu_item"
+                        android:gravity="center" >
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:background="@drawable/dishes_menu_dot" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="50dp" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:background="@drawable/maket_foot" -->
+        <!-- android:gravity="bottom|center_horizontal" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginBottom="10dp" -->
+        <!-- android:text="Add To Cart" -->
+        <!-- android:textColor="@color/white" /> -->
+        <!-- </RelativeLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@drawable/all_botton_bg" />
+
+            <RelativeLayout
+                android:id="@+id/maket_goto_order"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ffF7AC2E"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add To Cart"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,659 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/maket_map"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/map_background" />
+
+            <LinearLayout
+                android:id="@+id/maket_point"
+                android:layout_width="55dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="44.5dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/maket_points_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150"
+                    android:textColor="@color/white"
+                    android:textSize="12.3dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Points"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp" >
+
+                <TextView
+                    android:id="@+id/maket_logo"
+                    android:layout_width="114dp"
+                    android:layout_height="114dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/maket_logo" />
+
+                <LinearLayout
+                    android:id="@+id/point_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/maket_logo"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/maket_clock" />
+
+                    <TextView
+                        style="@style/content_min1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="12:00pm-10:30pm"
+                        android:textColor="#ff959595" />
+
+                    <TextView
+                        android:layout_width="45.3dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/maket_open" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="30dp" >
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/maket_star1" />
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/maket_star1" />
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/maket_star1" />
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/maket_star1" />
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/maket_star0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/maket_logo"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/maket_pad" />
+
+                    <TextView
+                        style="@style/content_min1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="America"
+                        android:textColor="#ff959595" />
+
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/maket_pay" />
+
+                    <TextView
+                        style="@style/content_min1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="30 dllars"
+                        android:textColor="#ff959595" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffacacac" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/maket_info"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/main_frame" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="21.3dp"
+                    android:layout_height="21.3dp"
+                    android:background="@drawable/maket_where" />
+
+                <TextView
+                    style="@style/content_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2500 Market St.San Francisco" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:layout_width="21.3dp"
+                    android:layout_height="21.3dp"
+                    android:background="@drawable/maket_phone" />
+
+                <TextView
+                    style="@style/content_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="217-989-8989" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#ffacacac" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/maket_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maket_info"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="119dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/maket_dishes_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="119dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="119dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pic01" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="119dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pic02" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="119dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pic03" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="119dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pic01" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="119dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pic01" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="119dp"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pic01" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- <Gallery -->
+            <!-- android:id="@+id/maket_context_gallery" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="119dp" -->
+            <!-- android:spacing="5dp" /> -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/maket_context1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/maket_context"
+            android:background="#ffe9ebed" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffacacac" />
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/confirmation_text_bg"
+                android:gravity="center"
+                android:text="175"
+                android:textColor="@color/white"
+                android:textSize="11.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="Points"
+                android:textColor="#fff8a33f"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/content_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Reward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/maket_context2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/maket_context1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#ffacacac" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:max="200"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/progressbar_bg" >
+
+                        <!-- <SeekBar -->
+                        <!-- android:layout_width="fill_parent" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:max="100" -->
+                        <!-- android:progress="30" -->
+                        <!-- android:progressDrawable="@color/textcolor" /> -->
+                    </ProgressBar>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#ffacacac" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/maket_context13"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffacacac" />
+
+                <TextView
+                    android:id="@+id/animotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="20%off all cakes in the store"
+                    android:textColor="#fffe8900" />
+
+                <TextView
+                    android:id="@+id/animotion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="20%off all cakes in the store"
+                    android:textColor="#fffe8900" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dot_tranger"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="12.3dp" />
+
+                    <TextView
+                        android:id="@+id/dot01"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/milestone_small" />
+
+                    <TextView
+                        android:id="@+id/trangle01"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/pointer_trangle"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="12.3dp" />
+
+                    <TextView
+                        android:id="@+id/dot02"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/milestone_small" />
+
+                    <TextView
+                        android:id="@+id/trangle02"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/pointer_trangle"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="12.3dp" />
+
+                    <TextView
+                        android:id="@+id/dot03"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/maket_dot_sel" />
+
+                    <TextView
+                        android:id="@+id/trangle03"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/pointer_trangle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="12.3dp" />
+
+                    <TextView
+                        android:id="@+id/dot04"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/milestone_small_grey5" />
+
+                    <TextView
+                        android:id="@+id/trangle04"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/pointer_trangle"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="14dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:textSize="12.3dp" />
+
+                    <TextView
+                        android:id="@+id/dot05"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/milestone_small_grey5" />
+
+                    <TextView
+                        android:id="@+id/trangle05"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/pointer_trangle"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/maket_context2" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffacacac" />
+
+            <TextView
+                style="@style/content_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="70dp"
+                android:text="More Rewards" />
+
+            <TextView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/user_more_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/maket_context3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/comment"
+            android:background="#ffe9ebed" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffacacac" />
+
+            <TextView
+                style="@style/content_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Review" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

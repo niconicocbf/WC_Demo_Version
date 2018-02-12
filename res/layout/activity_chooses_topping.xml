@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/side_pad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp" >
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/side_title" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="40dp" -->
+        <!-- android:background="@drawable/add_to_cart_title" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="10dp" -->
+        <!-- android:layout_height="18dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="20dp" -->
+        <!-- android:background="@drawable/add_title_left" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:text="Choose a Topping" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:textSize="20dp" /> -->
+        <!-- </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/side_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/add_to_cart_title" >
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/maket_title_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Choose a Topping"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/side_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/side_title"
+            android:divider="@null"
+            android:background="@color/white" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@drawable/all_botton_bg" />
+
+            <RelativeLayout
+                android:id="@+id/maket_goto_order"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ffF7AC2E"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
