@@ -12,9 +12,8 @@
 <img width="350" height="700" src="https://raw.githubusercontent.com/niconicocbf/WC_Demo_Version/master/res/raw/waitur_one%20.png" />
 
 # OverView
-<img width="350" height="650" src="https://raw.githubusercontent.com/niconicocbf/WC_Demo_Version/master/res/raw/waitur_main.gif" />
-<img width="350" height="650" src="https://raw.githubusercontent.com/niconicocbf/WC_Demo_Version/master/res/raw/waitus_two.gif" />
-
+<img width="400" height="650" src="https://raw.githubusercontent.com/niconicocbf/WC_Demo_Version/master/res/raw/waitur_main.gif" />
+<img width="400" height="650" src="https://raw.githubusercontent.com/niconicocbf/WC_Demo_Version/master/res/raw/waitus_two.gif" />
 
 
 
