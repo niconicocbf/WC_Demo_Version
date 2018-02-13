@@ -1,5 +1,6 @@
 # WC_Demo_Version
-## This is a demo project for job-hunting。
+
+## WaiturCustoms is a high performance takeaway platform with elegant interface.
 
 ### UI_Main
 <img width="350" height="700" src="https://raw.githubusercontent.com/niconicocbf/WC_Demo_Version/master/res/raw/waitur_main.png" />
